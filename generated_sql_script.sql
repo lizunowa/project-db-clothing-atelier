@@ -82,7 +82,10 @@ CONSTRAINT `fk_Изделие_Заказ1`
 FOREIGN KEY (`Заказ_Номер_заказа`) 
 REFERENCES `mydb`.`Заказ` (`Номер_заказа`) ON DELETE NO ACTION
 ON UPDATE NO ACTION,
-CONSTRAINT `fk_Изделие_Работник1` FOREIGN KEY (`Работник_idРаботник`) REFERENCES `mydb`.`Работник` (`idРаботник`) ON DELETE NO ACTION
+CONSTRAINT `fk_Изделие_Работник1` 
+FOREIGN KEY (`Работник_idРаботник`) 
+REFERENCES `mydb`.`Работник` (`idРаботник`) 
+ON DELETE NO ACTION
 ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
